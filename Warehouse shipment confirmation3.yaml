@@ -286,19 +286,18 @@ components:
               WarehouseLookupCode:
                 type: string
     TestData:
-      properties:
-        TestingData:
-          type: array
-          items:
-            type: object
-            properties:
-              test:
-                type: string
       x-flow-type:
-        name: RootShipmentConf
+        name: TestData
       x-flow-query:
         path: /shipment/Shipmentconfirmation/shipmentdetails
         operation: get
+      properties:
+        Test:
+          type: string
+        Test2:
+          type: integer
+        test3:
+          type: boolean
     Consumer:
       properties:
         data:
