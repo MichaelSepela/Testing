@@ -16,7 +16,7 @@ info:
     url: https://craneww.com/
   version: 1
 servers:
-  - url: https://api-uat.craneww.com/dev/ws/rest/warehouse/v0/shipment/Shipmentconfirmation/shipmentdetails
+  - url: https://api-uat.craneww.com/dev/ws/rest/warehouse/v0
 tags:
   - name: Shipmentconfirmation
 paths:
