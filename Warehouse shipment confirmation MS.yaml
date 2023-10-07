@@ -14,7 +14,7 @@ info:
   license:
     name: Crane License
     url: https://craneww.com/
-  version: 1
+  version: 1.0.0
 servers:
   - url: https://api-uat.craneww.com/dev/ws/rest/warehouse/v0
 tags:
@@ -296,21 +296,21 @@ components:
       x-flow-query:
         path: /consumerlist
         operation: get
-      Consumer_data:
-        type: object
-        properties:
-          id:
-            type: string
-          first_name:
-            type: string
-          last_name:
-            type: string
-          email:
-            type: string
-          gender:
-            type: string
-          ip_address:
-            type: string
+    Consumer_data:
+      type: object
+      properties:
+        id:
+          type: string
+        first_name:
+          type: string
+        last_name:
+          type: string
+        email:
+          type: string
+        gender:
+          type: string
+        ip_address:
+          type: string
   securitySchemes:
     X-API-Key:
       type: apiKey
