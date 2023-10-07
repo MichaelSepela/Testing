@@ -294,7 +294,7 @@ components:
       x-flow-type:
         name: RootShipmentConf
       x-flow-query:
-        path: /Shipmentconfirmation/shipmentdetails
+        path: /shipment/Shipmentconfirmation/shipmentdetails
         operation: get
     Consumer:
       properties:
