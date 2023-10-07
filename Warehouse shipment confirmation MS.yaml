@@ -285,6 +285,14 @@ components:
                 type: string
               WarehouseLookupCode:
                 type: string
+    TestData:
+      properties:
+        TestingData:
+          type: array
+          items:
+            $ref: '#/components/schemas/RootShipmentConf'
+      x-flow-type:
+        name: RootShipmentConf
     Consumer:
       properties:
         data:
