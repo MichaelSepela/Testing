@@ -293,10 +293,13 @@ components:
         operation: get
       properties:
         OrderHeaders:
-          type: array
+          type: object
           properties:
-            Testinobject:
-              type: string
+            Addresses:
+              type: object
+            properties:
+              AccountLookupCode:
+                type: string
         Test2:
           type: integer
         test3:
