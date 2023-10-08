@@ -79,6 +79,11 @@ paths:
           $ref: "#/components/responses/default"
 components:
   schemas:
+    Addresses:
+      type: object
+      properties:
+        AccountLookupCode:
+          type: string
     RootShipmentConf:
       type: object
       properties:
@@ -287,7 +292,7 @@ components:
                 type: string
     RootShipmentConf2:
       x-flow-type:
-        name: RootShipmentConf
+        name: RootShipmentConf2
       x-flow-query:
         path: /shipment/Shipmentconfirmation/shipmentdetails
         operation: get
@@ -301,6 +306,15 @@ components:
           type: integer
         test3:
           type: boolean
+    TestObject:
+      x-flow-type:
+        name: TestObject
+      x-flow-query:
+        path: /shipment/Shipmentconfirmation/shipmentdetails
+        operation: get
+      properties:
+        testingobject:
+          $ref: '#/components/schemas/RootShipmentConf'
     Consumer:
       properties:
         data:
