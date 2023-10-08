@@ -287,13 +287,13 @@ components:
                 type: string
     TestData:
       x-flow-type:
-        name: TestData
+        name: RootShipmentConf
       x-flow-query:
         path: /shipment/Shipmentconfirmation/shipmentdetails
         operation: get
       properties:
         OrderHeaders:
-          type: object
+          type: array
           properties:
             Testinobject:
               type: string
