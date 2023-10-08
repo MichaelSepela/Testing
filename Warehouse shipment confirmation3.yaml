@@ -79,11 +79,6 @@ paths:
           $ref: "#/components/responses/default"
 components:
   schemas:
-    Addresses:
-      type: object
-      properties:
-        AccountLookupCode:
-          type: string
     RootShipmentConf:
       type: object
       properties:
