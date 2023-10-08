@@ -293,8 +293,8 @@ components:
         operation: get
       properties:
         OrderHeaders:
-          type: Object
-          Properties:
+          type: object
+          properties:
             Testinobject:
               type: string
         Test2:
