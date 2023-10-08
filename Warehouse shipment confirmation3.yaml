@@ -79,6 +79,11 @@ paths:
           $ref: "#/components/responses/default"
 components:
   schemas:
+    Addresses:
+      type: object
+      properties:
+        AccountLookupCode:
+          type: string
     RootShipmentConf:
       type: object
       properties:
@@ -285,7 +290,7 @@ components:
                 type: string
               WarehouseLookupCode:
                 type: string
-    TestData:
+    RootShipmentConf2:
       x-flow-type:
         name: RootShipmentConf
       x-flow-query:
@@ -293,13 +298,14 @@ components:
         operation: get
       properties:
         OrderHeaders:
-          type: object
+          type: array
           properties:
             Addresses:
               type: object
               properties:
                 accountlookupcode:
                   type: string
+                
         Test2:
           type: integer
         test3:
