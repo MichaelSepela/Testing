@@ -292,8 +292,11 @@ components:
         path: /shipment/Shipmentconfirmation/shipmentdetails
         operation: get
       properties:
-        Test:
-          type: string
+        OrderHeaders:
+          type: Object
+          Properties:
+            Testinobject:
+              type: string
         Test2:
           type: integer
         test3:
