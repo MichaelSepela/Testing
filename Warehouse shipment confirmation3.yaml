@@ -297,6 +297,9 @@ components:
           properties:
             Addresses:
               type: object
+              properties:
+                accountlookupcode:
+                  type: string
         Test2:
           type: integer
         test3:
