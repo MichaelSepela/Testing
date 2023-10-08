@@ -298,13 +298,10 @@ components:
         operation: get
       properties:
         OrderHeaders:
-          type: array
+          type: object
           properties:
             Addresses:
-              type: object
-              properties:
-                accountlookupcode:
-                  type: string
+              type: string
                 
         Test2:
           type: integer
