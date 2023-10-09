@@ -60,7 +60,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/TestObject"
+                $ref: "#/components/schemas/RootShipmentConf"
         "400":
           $ref: "#/components/responses/400"
         "401":
@@ -308,10 +308,10 @@ components:
           type: boolean
     TestObject:
       x-flow-type:
-        name: TestObject
+          name: TestObject
       x-flow-query:
-        path: /shipment/Shipmentconfirmation/shipmentdetails
-        operation: get
+          path: /shipment/Shipmentconfirmation/shipmentdetails
+          operation: get
       properties:
         testingobject:
           $ref: '#/components/schemas/RootShipmentConf'
