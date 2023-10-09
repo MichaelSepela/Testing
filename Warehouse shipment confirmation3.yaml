@@ -60,7 +60,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/RootShipmentConf"
+                $ref: "#/components/schemas/RootShipmentConf2"
         "400":
           $ref: "#/components/responses/400"
         "401":
@@ -290,7 +290,7 @@ components:
                 type: string
               WarehouseLookupCode:
                 type: string
-    RootShipmentConf2:
+    RootShipmentConfFlowTest:
       x-flow-type:
         name: RootShipmentConf2
       x-flow-query:
@@ -315,32 +315,6 @@ components:
       properties:
         testingobject:
           $ref: '#/components/schemas/RootShipmentConf'
-    Consumer:
-      properties:
-        data:
-          type: array
-          items:
-            $ref: '#/components/schemas/Consumer_data'
-      x-flow-type:
-        name: Consumer
-      x-flow-query:
-        path: /consumerlist
-        operation: get
-    Consumer_data:
-      type: object
-      properties:
-        id:
-          type: string
-        first_name:
-          type: string
-        last_name:
-          type: string
-        email:
-          type: string
-        gender:
-          type: string
-        ip_address:
-          type: string
   securitySchemes:
     X-API-Key:
       type: apiKey
