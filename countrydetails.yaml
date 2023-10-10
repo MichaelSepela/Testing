@@ -26,7 +26,10 @@ components:
           path: /all
           operation: get    
       properties:
-        cca2:
-          type: string
-        cca3:
-          type: string
+        Countryarray:
+          type: array
+          properties:
+            cca2:
+              type: string
+            cca3:
+              type: string
