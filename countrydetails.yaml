@@ -27,7 +27,7 @@ components:
           operation: get    
       properties:
         Countryarray:
-          type: array
+          type: object
           properties:
             cca2:
               type: string
