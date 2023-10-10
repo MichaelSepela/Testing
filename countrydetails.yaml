@@ -1,0 +1,32 @@
+openapi: 3.0.0
+servers:
+  - url: https://restcountries.com/v3.1
+  description: List of Countries
+  title: restcountries
+  version: 3.1
+paths:
+  /all:
+    get:
+      description: |
+        get data from api
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/countrydetails"
+          description: OK
+components:
+  schemas:
+    countrydetails:
+      x-flow-type:
+          name: countrydetails
+      x-flow-query:
+          path: /all
+          operation: get    
+      properties:
+        cca2:
+          type: string
+        cca3:
+          type: string
+        
